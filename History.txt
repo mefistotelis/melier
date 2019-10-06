@@ -1,4 +1,63 @@
-**AKTUALNA WERSJA TEGO PLIKU JEST GDZIE INDZIEJ**
+Planowane:
+- Dorobiæ klasê SearcherCatBuffer do gromadzenia konkretnych kombinacji zaznaczonych kategorii i
+  ich zawartoœci
+
+Wersja: 0.32
+- Poprawki obs³ugi b³êdów przy wyszukiwaniu (obciêcie gdy za du¿o)
+- Poprawione wczytywanie rozszerzeñ plików z "0000.txt"
+- Poprawione rozpoznawanie TIFF, program ju¿ nie myli go
+  z innymi formatami (3DS)
+
+Wersja: 0.31
+- Nowy kompilator - C++ Builder 6
+- Nowy algorytm zmiany matrycy znaków
+- Poprawki tworzenia wyników w formacie RTF podczas wyszukiwania
+- Nowy algorytm ³adowania i wyœwietlania plików bazy danych
+- Poprawiony bufor plików bazy
+- Opcja szybkiego wyszukiwania (wyszukiwanie z bufora) z shiftem
+
+Wersja: 0.30
+- Przerobienie algorytmu wyszukuj¹cego na C++
+- Wykorzystanie listy wirtualnej (szybciej) w pozyczkach
+- System po¿yczek przerobiony na ListView
+- Nowy komponent do wyszukiwania p³yty o danym numerze
+
+Wersja: 0.29
+- Mo¿liwoœæ anulowania analizy przez ponowne wciœniêcie "Analizuj"
+- Poprawiony edytor - RichEdit zast¹piony przez TMemo (poprawka cofniêta)
+- Przetestowanie i poprawienie funkcji rozpoznawania bitmap
+- Przepisanie analizy MPEG (nowa te¿ jeszcze nie dzia³a poprawnie)
+
+Wersja: 0.28
+- Rozpoznawanie map bitowych na poziomie jêzyka C (konwersja z Pascala)
+- Dzia³a ju¿ prymitywna wielow¹tkowoœæ przy analizie CD
+- Przepisanie czêœci systemu po¿yczek na C
+- Zrobiona obs³uga wyj¹tków w krytycznych miejscach nowej analizy
+- Pierwsza wersja XPress spisu cofniêta do 16-bitowej (mniejsza o 25%)
+
+Wersja: 0.27
+- Dodanie obs³ugi plików LightWave i starszych animacji (FLI,FLC,ANM...)
+- Analiza MPEG z wykrywaniem rozdzielczoœci itp.
+- Zmiana kompilatora z Delphi 4 na C++ Builder 5
+- Przepisanie czêœci funkcji analizuj¹cych p³ytê na jêzyk C
+- Poprawienie okreœlania czasu filmów d³u¿szych od godziny
+
+Wersja: 0.26
+- W wypadku b³êdów w pêtli g³ównej, program nie wyœwietla ju¿ dziesi¹tek b³êdów,
+  ale jeden d³ugi komunikat na zakoñczenie.
+- Przy zapisie pliku, nie zawsze zwiêkszana jest iloœæ p³yt
+   (tylko jak zapisywana jest nastêpna)
+- Lekkie poprawki nowej analizy, poprawka wieszania siê przy analizie wielkoœci liter
+- Dodanie obs³ugi popularnych formatów bitmap (rozpoznawanie po pocz¹tku pliku)
+- Dodanie obs³ugi formatów RIFF (tzn. AVI, WAVE, FORM z Motoroli)
+- Dodanie podstawowej obs³ugi formatów Video (MPEG,WMF - tylko rozpoznawanie)
+
+Wersja: 0.25
+- System po¿yczek nie zapisuje bazy danych w razie b³êdów
+- Poprawiona nowa analiza CD - usuwa z nazw plików elementy powtarzaj¹ce siê (brak funkcji wykonawczej)
+- Skoñczony bufor wyszukiwania - czas wyszukiwania za drugim razem jest o po³owê krótszy
+- Poprawienie denerwuj¹cych zasad pracy w systemie po¿yczek (zwi¹zane z ComboBoxami)
+- Dla u³atwienia zmieszczenia programu na dyskietce, powsta³a wersja XPress mniejsza o 25%
 
 Wersja: 0.24
 - Mo¿na siê prze³¹czaæ pomiêdzy widokiem ca³ych p³yt a wynikami wyszukiwania
@@ -6,6 +65,7 @@ Wersja: 0.24
 - Opcja rozmiaru bufora wyszukiwania (bufor jeszcze nie istnieje...)
 - Ju¿ dzia³a funkcja konwersji wielkoœci liter
 - Poprawiona wielow¹tkowoœæ systemu po¿yczek
+- System po¿yczek ma now¹ strukture dynamiczn¹ do bazy danych
 
 Wersja: 0.23
 - Poprawienie ZnajdŸ/Zamieñ

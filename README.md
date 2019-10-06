@@ -1,4 +1,5 @@
-﻿This is a project I worked on at end of primary school and in high school.
+﻿MEdium LIstER
+This is a project I worked on at end of primary school and in high school.
 Sharing mostly out of nostalgia. Original description:
 
 The program was written to create catalouge of CDs in form of text files.
