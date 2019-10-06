@@ -32,7 +32,7 @@ __published:	// IDE-managed Components
         TButton *EdRestoreBtn;
         TEdit *EdNumber;
         TButton *EdSaveBtn;
-        TButton *AnalyseBtn;
+        TButton *AnalyseIntrBtn;
         TPanel *EFunctionPanel;
         TButton *EdFindButton;
         TButton *EdReplaceButton;
@@ -155,6 +155,7 @@ __published:	// IDE-managed Components
         TEdit *SpisItemSelector;
         TRichEdit *ItemViewer;
         TSpeedButton *DebGenStatButton;
+        TButton *AnalyseExtrBtn;
         void __fastcall MainPageControlChange(TObject *Sender);
         void __fastcall HelpButtonClick(TObject *Sender);
         void __fastcall FormCreate(TObject *Sender);
@@ -164,7 +165,7 @@ __published:	// IDE-managed Components
         void __fastcall FindKeyPress(TObject *Sender, char &Key);
         void __fastcall EdRestoreBtnClick(TObject *Sender);
         void __fastcall EdSaveBtnClick(TObject *Sender);
-        void __fastcall AnalyseBtnClick(TObject *Sender);
+        void __fastcall AnalyseIntrBtnClick(TObject *Sender);
         void __fastcall FShowAllBtnClick(TObject *Sender);
         void __fastcall FExportBtnClick(TObject *Sender);
         void __fastcall ViewerWordWraperClick(TObject *Sender);
@@ -202,6 +203,7 @@ __published:	// IDE-managed Components
           TMouseButton Button, TShiftState Shift, int X, int Y);
         void __fastcall TyperKeyDown(TObject *Sender, WORD &Key,
           TShiftState Shift);
+        void __fastcall AnalyseExtrBtnClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     TSynchronizer *Synchronizer;

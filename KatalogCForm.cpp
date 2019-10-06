@@ -291,7 +291,7 @@ void __fastcall TKatalog::EdSaveBtnClick(TObject *Sender)
   };
 }
 //---------------------------------------------------------------------------
-void __fastcall TKatalog::AnalyseBtnClick(TObject *Sender)
+void __fastcall TKatalog::AnalyseIntrBtnClick(TObject *Sender)
 {
  if (EditSystem!=NULL)
    __try
@@ -422,6 +422,10 @@ void __fastcall TKatalog::PPoEditKeyPress(TObject *Sender, char &Key)
 //---------------------------------------------------------------------------
 void __fastcall TKatalog::FormDestroy(TObject *Sender)
 {
+  if (SearchSystem!=NULL)
+    SearchSystem->Terminate();
+  if (EditSystem!=NULL)
+    EditSystem->Terminate();
   if (BorrowSystem!=NULL)
     {
     BorrowSystem->Suspend();
@@ -640,6 +644,29 @@ void __fastcall TKatalog::TyperKeyDown(TObject *Sender, WORD &Key,
 {
   if (Synchronizer!=NULL)
     Synchronizer->SetSearchAddKeyParams(Shift);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TKatalog::AnalyseExtrBtnClick(TObject *Sender)
+{
+ if (EditSystem!=NULL)
+   __try
+    {
+    if (EditSystem->DiscAnalyzer!=NULL)
+      {
+      EditSystem->DiscAnalyzer->Terminate=true;
+      return;
+      }
+    EdNumber->Text=IntToStr(StrToIntDef(LimitHigh->Text,0)+1);
+    while (EdNumber->Text.Length()<NameDigits) EdNumber->Text="0"+EdNumber->Text;
+
+    EditSystem->Function=etfCrListMenader;
+    EditSystem->FuncParamList=Editor->Lines;
+    EditSystem->Resume();
+    }
+   __finally
+    {
+    };
 }
 //---------------------------------------------------------------------------
 

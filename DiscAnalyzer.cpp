@@ -1448,9 +1448,11 @@ bool __fastcall TDiscAnalyzer::RecognizedTiffStart(TSearchRecList *Entry,char *F
 {
    bool isBigEndian;
    uint nEntries;
+   uint nEntriesOk;
    uint cEntry;
    uint loadedBlockSize;
    String bMagic;
+   uint verMagic;
    uint bSubPos;
    uint bSubTag;
    uint bSubDataType;
@@ -1477,15 +1479,23 @@ bool __fastcall TDiscAnalyzer::RecognizedTiffStart(TSearchRecList *Entry,char *F
   //do pelnego okreslenia TIFFa trzeba caly plik... ale probujemy
   //Pobieramy offset pierwszego "katalogu"
   if (isBigEndian)
+    {
+        verMagic=GetFromBufBigEndianWord(FileStart,2);
         bSubPos=GetFromBufBigEndianDWord(FileStart,4);
+    }
       else
+    {
+        verMagic=GetFromBufLittleEndianWord(FileStart,2);
         bSubPos=GetFromBufLittleEndianDWord(FileStart,4);
+    }
+    //Upewnijmy siê ¿e to nie jest podobny plik (3DS?)
+    if (verMagic!=0x2A) return false;
   //chodzimy po katalogach (jak pierwszego uda sie wczytac to bedzie dobrze...)
-    Entry->BodyAnalist.Name=PrepareNameFromFName(Entry->F);
-    Entry->BodyAnalist.DescBefore="";
-    Entry->BodyAnalist.Probability=700;
-    Entry->BodyAnalist.DescAfter="Tiff";
+    String anDescAfter="Tiff";
+    String anDescBefore="";
     bWidth=0;bHeight=0;bColorBPP=0;
+    nEntriesOk=0;//zabezpieczenie czy choæ kawa³ek struktury pliku odpowiada TIFF.
+    if (bSubPos+14<uint(Entry->F.Size)) nEntriesOk++;
   while ((bSubPos>7)&&(bSubPos+14<loadedBlockSize))
     {
     //Pobieramy ilosc wpisow w katalogu
@@ -1519,18 +1529,21 @@ bool __fastcall TDiscAnalyzer::RecognizedTiffStart(TSearchRecList *Entry,char *F
         switch (bSubTag)
             {
              case 277:{
+                  nEntriesOk++;
                   if (bSubDataType==3)
                       bColorBPP=fieldDataW*8;
                     else if (bSubDataType==4)
                       bColorBPP=fieldDataDW*8;
                   }break;
              case 257:{
+                  nEntriesOk++;
                   if (bSubDataType==3)
                       bHeight=fieldDataW;
                     else if (bSubDataType==4)
                       bHeight=fieldDataDW;
                   }break;
              case 256:{
+                  nEntriesOk++;
                   if (bSubDataType==3)
                       bWidth=fieldDataW;
                     else if (bSubDataType==4)
@@ -1538,17 +1551,27 @@ bool __fastcall TDiscAnalyzer::RecognizedTiffStart(TSearchRecList *Entry,char *F
                   }break;
             };//end case
         bSubPos+=12;
-        };//while (cEntry<...
+        }//while (cEntry<...
 
     //Pobieramy offset nastepnego katalogu
         if ((bSubPos+4>loadedBlockSize) || (bSubPos<9))
             break;
+        uint nSubPos;
         if (isBigEndian)
-              bSubPos=GetFromBufBigEndianDWord(FileStart,bSubPos);
+              nSubPos=GetFromBufBigEndianDWord(FileStart,bSubPos);
             else
-              bSubPos=GetFromBufLittleEndianDWord(FileStart,bSubPos);
-        bSubPos++;//bo u nas pierwszy jest bajt 1 a nie 0
+              nSubPos=GetFromBufLittleEndianDWord(FileStart,bSubPos);
+        nSubPos++;//bo u nas pierwszy jest bajt 1 a nie 0
+        //Sprawdzamy czy nowy offset jest OK, tzn czy z nim nie bedziemy kr¹¿yæ w kó³ko
+        if (nSubPos>bSubPos) bSubPos=nSubPos; else break;
     };//while ((bSubPos>...
+
+    if (nEntriesOk<1) return false;
+    //Jak tu doszliœmy to to rzeczywiœcie plik Tiff
+    Entry->BodyAnalist.Name=PrepareNameFromFName(Entry->F);
+    Entry->BodyAnalist.DescBefore=anDescBefore;
+    Entry->BodyAnalist.Probability=700;
+    Entry->BodyAnalist.DescAfter=anDescAfter;
 
   //Analiza zakonczona - ustalamy opis tekstowy
     if (isBigEndian)

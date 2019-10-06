@@ -3,6 +3,9 @@
 #ifndef SpisEditorCH
 #define SpisEditorCH
 //---------------------------------------------------------------------------
+#include <process.h>
+#include <windows.h>
+#include <stdio.h>
 #include <Classes.hpp>
 #include "SynchronizerUnit.h"
 #include "DiscAnalyzer.h"
@@ -14,6 +17,7 @@ enum TSpisEdThrdFunction
    etfNone,
    etfCreateList,
    etfCreateListOld,
+   etfCrListMenader,
    etfFindInRichEd,
    etfReplaceInRichEd,
    };
@@ -33,6 +37,7 @@ public:
            //Funkcje wywo³uj¹ce analizê CD
         void CreateList(TObject *Sender,TStrings *List);
         void CreateListOld(TStrings *List);
+        void CreateListMenader(TStrings *List);
            //Funkcje dodatkowe
         void ChangeSelectionCase(TObject *Sender,TRichEdit *Editor);
         void ChangeSelectionCase(TObject *Sender,TMemo *Editor);

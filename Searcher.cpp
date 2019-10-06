@@ -17,6 +17,7 @@ __fastcall TKatSearcher::TKatSearcher(TSynchronizer *nSynchronizer)
 {
     // Ustawiam thread
     Priority = tpLowest;
+    FreeOnTerminate = false;
     CancelAction=false;
     Working=false;
     ActiveTask=stskNone;
@@ -36,7 +37,6 @@ __fastcall TKatSearcher::~TKatSearcher()
 {
   Busy=true;
   Priority=tpNormal;
-  Terminate();
   delete ItmBuffer;
   ItmBuffer=NULL;
   delete FormattedReslt;
