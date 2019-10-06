@@ -1,0 +1,39 @@
+Kategorie:
+Filmy=animation
+Seriale=animation
+MLayer3=music
+Obrazki=picture
+Teledyski=animation
+Animacje=animation
+Informacje=data
+Ksi¥¾ki=data
+Warsztat=various
+Dane=data
+Gry=program
+Dodatki=program
+Pakery=program
+Systemy=program
+Ulepszenia=program
+Narz©dzia=program
+Programing=program
+Magnetyki=program
+Laserowe=program
+Grafika=program
+Muzyka=program
+Sie†=program
+Ochrona=program
+Biuro=program
+Edukacja=program
+Sterowniki=program
+Bios=program
+Emulacja=program
+Viewery=program
+
+Rozszerzenia:
+MUSIC=mp3 mp2 mp1 wav wma ape mid midi rmi kar hmp hmi xmi mss mus cmf gmd mids miz hmz ogg cda voc au snd aif aiff mod mdz stm stz s3m s3z it itz mtm ult 669 pls
+PROGRAM=exe com dll drv vxd 386
+PICTURE=bmp gif jpg jpeg jpe cpt tga pcx png art dib rle crw thm djv djvu iw4 emf fpx icl icn ico cur ani iff lbm ilbm jif jfif kdc pbm pcd dcx pgm pic pict pct pix ppm psd psp ras rsb sgi rgb rgba bw int inta sid tif tiff xif wmf xbm xpm
+ANIMATION=avi mpg mpeg mpa mov asf wmv flc fli flv smk
+DATA=xls doc db cdr ppt
+VARIOUS=
+ARCHIVE=rar arj zip zoo tgz gz jar lzh sef ace

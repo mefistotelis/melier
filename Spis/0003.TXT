@@ -1,0 +1,65 @@
+Pˆyta NoName 650MB(11.08.1996)
+Grafika:
+Fractal Designed Painter 3.1(9.3MB)
+Autodesk Animator Studio 1.1(Windows 3.x(22MB))
+CorelDraw 6(Windows 95(180MB))
+Visio 4.0 Technical Edition(zawiera VBRUN300.DLL;the best business graphix software;Windows(21MB))
+
+Muzyka:
+HiJaak(Windows 95(6MB))
+The Juker 5.0(Windows 3.x/95(1.4MB))
+
+Sie†:
+WinFax 7.0(Windows 95(12MB))
+FrontPage WWW Server 1.0(zawiera VBRUN300.DLL(21MB))
+Netscape Navigator(Przegl¥darka internetowa;Windows(1.7MB))
+LapLink 6.0(Windows 3.x/9x;Proggy to connect two computers via null modem cable.(2.1MB))
+
+Biuro:
+Borland Visual DBase 5.5(9.5MB)
+Borland Visual DBase Compiler 5.5(5.3MB)
+Microsoft Money 4.0(4.2MB)
+Microsoft Office 95(49MB)
+Lotus Notes 4.0(Windows 95(19MB))
+Calendar Creator 2.0(Windows 95;brakuje mu pliku MFCANS32.DLL(41MB))
+
+Edukacja:
+Teach Me(Windows 95(1.7MB))
+HyperChem 4.0(Windows 95;Program do obliczeä chemicznych(3.8MB))
+
+Gry:
+Microsoft Golf 2.0(Windows 95(4.7MB))
+
+Systemy:
+Microsoft Windows 95(System rozpoczynaj¥cy now¥ rodzin©, uruchamia programy w formacie Windowsa NT 3.0, czyli PE(32MB))
+Microsoft Service Pack 1(Update Windowsa 95;ZIP(15MB))
+Microsoft Plus Pack(Windows 95(11MB))
+
+Ulepszenia:
+Addons/patche(Windows 95 wersja pierwotna;mi©dzy innymi do uruchomienia LANTASTIC 5.0/6.0,QEMM 7.50, pozatym FILESEC.VXD,MSSP.VXD, udoskonalone pliki DLL(0.3MB))
+
+Narz©dzia:
+SoftRAM 2.0(Windows 95(1.1MB))
+MicroHelp UnInstaller 3.0(5.3MB)
+Norton Navigator(Windows 95(3.8MB))
+Drag & File(Windows 95/NT;Very powerful and easy Windows file manager(1.1MB))
+
+Magnetyki:
+Norton Utilities 1.0(Windows 95(6.8MB))
+
+Pakery:
+WinZip 6.0(Windows 95(0.7MB))
+VertiSoft Zip-it!(Windows 95(2.5MB))
+
+Ochrona:
+Norton AntiVirus 1.0(beta;Windows(3.5MB))
+F-Prot AntiVirus PRO 2.19(dwie wersje(2x 1.2MB))
+
+Programing:
+Microsoft Visual Basic 4.0(Windows 95(30MB))
+
+Obrazki:
+Cliparty(w CCREATOR.W95;WMF(2000,16MB))
+
+Viewery:
+Adobe Acrobat Reader 2.0(1.4MB)

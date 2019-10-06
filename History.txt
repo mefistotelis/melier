@@ -1,0 +1,102 @@
+**AKTUALNA WERSJA TEGO PLIKU JEST GDZIE INDZIEJ**
+
+Wersja: 0.24
+- Mo¿na siê prze³¹czaæ pomiêdzy widokiem ca³ych p³yt a wynikami wyszukiwania
+- Mo¿liwe jest anulowanie formatowania wyników wyszukiwania
+- Opcja rozmiaru bufora wyszukiwania (bufor jeszcze nie istnieje...)
+- Ju¿ dzia³a funkcja konwersji wielkoœci liter
+- Poprawiona wielow¹tkowoœæ systemu po¿yczek
+
+Wersja: 0.23
+- Poprawienie ZnajdŸ/Zamieñ
+- Poprawki eksportu
+- Nowe opcje w interfejsie (jeszcze nie dzia³aj¹...)
+- Opcja przeskalowywania komponentów
+- Wielow¹tkowoœæ bardziej "dojrza³a" - nie ¿re procka jak nie trzeba
+- Dodanie obs³ugi b³êdów w paru czêstych sytuacjach
+
+Wersja: 0.22
+- Poprawki wielow¹tkowoœci
+- Mo¿liwoœæ anulowania wyszukiwania przez kolejny ENTER
+- Mo¿liwoœæ ogl¹dania wyników przed zakoñczeniem wyszukiwania
+- Rozbity algorytm wyszukuj¹cy - ³atwiej bêdzie poprawiaæ
+- Dynamiczna zmiana priorytetów w¹tków
+- Opcje ZnajdŸ/Zamieñ w zak³adce edycji w koñcu dzia³aj¹
+
+Wersja: 0.21
+- Ca³kowicie nowy mechanizm analizy CD, jeszcze niedopracowany
+- Pozostawiony równie¿ stary mechanizm, gdyby nowy sobie nie radzi³
+- Wielow¹tkowoœæ systemu po¿yczek - szybciej dzia³a
+- Wielow¹tkowoœæ wyszukiwania - mo¿e mieæ b³êdy
+
+Wersja: 0.20
+- Komponent listuj¹cy napêdy w polu edycji
+- Zmiana chwili tworzenia objektu edycji
+
+Wersja: 0.19
+- Poprawa systemu po¿yczek (czytelniejsze klasy)
+- W³asna ikona
+- Dodanie historii oraz pomocy w plikach TXT
+- £adniejsze okienka dialogowe (ze standardowymi bitmapkami)
+- Bardziej samodzielna klasa sychronizuj¹ca (inaczej: niewidoczne poprawki j¹dra)
+
+Wersja: 0.18
+- Przebudowa j¹dra (podzia³ na wiêcej klas)
+- Poprawa kilku niewidocznych b³êdów
+- Podczas zwracania w polu imienia nie wyskakuje ju¿ '?'
+
+Wersja: 0.17
+- Wprowadzenie czteroznakowych numerów (by³y 3-znakowe)
+- Poprawa odœwierzania przy zmianie rozmiaru
+- Przejœcie na nowszy kompilator (Delphi 4)
+
+Wersja: 0.16
+- Poprawki systemu po¿yczek
+- Ulepszony komponent zak³adek
+
+Wersja: 0.15
+- Wprowadzenie systemu po¿yczek
+- Drobne poprawki interfejsu
+
+Wersja: 0.14
+- Poprawki edytora bazy
+- Dodatkowe opcje w zak³adce 'ZnajdŸ'
+
+Wersja: 0.13
+- Przejœcie z CheckBoxów na przyciski w polu kategorii
+
+Wersja: 0.12
+- Lekka poprawa struktury programu
+- Dodanie opcji "wyszukaj w bazie"
+
+Wersja: 0.11
+- Dodanie zapisu konfiguracji do rejestru
+- Poprawki wyœwietlania czcionek
+
+Wersja: 0.10
+- Podstawowe opcje konfiguracyjne
+- Mo¿liwoœæ zmiany czcionek
+
+Wersja: 0.09
+- Dodanie paska stanu
+- Edytor bazy nie wiesza programu
+
+Wersja: 0.08
+- Dodanie edytora bazy
+
+Wersja: 0.07
+- Wprowadzenie zak³adek
+- dodanie okna "o programie"
+
+Wersja: 0.06
+- Przejœcie na Delphi 3
+- Poprawki zwiazane ze zmian¹ kompilera
+- Kompilacja w wersji 32-bitowej
+
+Wersja: 0.05
+- Pierwsza dzia³aj¹ca wersja programu
+- Skompilowana w Delphi 1.2
+- Dla Windows 3.1
+- Statyczne kategorie
+- Brak opcji wyszukiwania
+- brak konfiguracji

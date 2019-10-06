@@ -1,0 +1,15 @@
+/****************************************************************************
+
+
+by Tomasz Lis 2001
+
+*****************************************************************************/
+
+
+EXDLGTEMP DIALOG 0, 0, 204, 106
+STYLE 0x404L | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+LANGUAGE LANG_NEUTRAL , SUBLANG_NEUTRAL
+{
+ LTEXT "", 1119, 0, 0, 204, 76, SS_LEFT | WS_CHILD | NOT WS_VISIBLE | WS_GROUP
+}
